@@ -1,7 +1,9 @@
 ##Source data##
 
 This is a data set studying human activity recognition using smart phones, which can be obtained from UCI Machine Learning Repository website. A full description can be found at: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones The data for the project can be downloaded here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
-R script
+
+
+##R script##
 
 The script "run_analysis.R" performs the following steps:
 
@@ -110,7 +112,8 @@ fBodyBodyGyroJerkMagStd
 fBodyBodyGyroJerkMagMeanFreq
 
 
-Activity Labels - Activies performed while measurements were taken
+##Activity Labels## 
+- Activies performed while measurements were taken
 
 1. WALKING 
 2. WALKING_UPSTAIRS 
