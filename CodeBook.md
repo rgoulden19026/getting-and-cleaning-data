@@ -7,17 +7,14 @@ This is a data set studying human activity recognition using smart phones, which
 
 The script "run_analysis.R" performs the following steps:
 
- 1. Merge the training and the test sets to create one data set
- 2. Download the data and unzip dataset
- 3. Read the training and test data sets
+ 1. Download the data and unzip dataset
+ 2. Read the training and test data sets
+ 3. Merge the training and test data sets
  4. Assign column names using descriptive variable names
- 5. Merge the training and test data sets
- 6. Extract only the measurements on the mean and standard deviation for each measurement
- 7. Read all column names
- 8. Make subset from merged data
- 9. Write the data set to file (full_data.txt)
- 10. Create a second, independent tidy data set with the average of each variable for each activity and each subject
- 11. Write the second data set to file (tidy_data.txt)
+ 5. Extract only the measurements on the mean and standard deviation for each measurement
+ 6. Write the data set to file (full_data.txt)
+ 7. Create a second, independent tidy data set with the average of each variable for each activity and each subject
+ 8. Write the second data set to file (tidy_data.txt)
 
 
 ##Data sets Resulting from R Script:##
@@ -112,7 +109,7 @@ fBodyBodyGyroJerkMagStd
 fBodyBodyGyroJerkMagMeanFreq
 
 
-##Activity Labels## 
+##Activity Labels
 - Activies performed while measurements were taken
 
 1. WALKING 
