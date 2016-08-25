@@ -20,9 +20,11 @@ colnames(subject_train) <- "subjectid"
 colnames(x_test) <- features[,2]
 colnames(y_test) <- "activityid"
 colnames(subject_test) <- "subjectid"
+
 colnames(activitylabels) <- c("activityid","activitytype")
 
 merge_train <- cbind(y_train,subject_train,x_train)
+
 merge_test <- cbind(y_test,subject_test,x_test)
 mergedata <- rbind(merge_train,merge_test)
 
@@ -35,8 +37,10 @@ mean_std_set <- mergedata[,meanandstd==TRUE]
 
 activitynames_set <- merge(mean_std_set,activitylabels,by="activityid",all.x=TRUE)
 
-tidy_data <- aggregate(.~subjectid+activityid, activitynames_set,mean)
+tidy_data <- aggregate(.~subjectid+activitytype, activitynames_set,mean)
 tidy_data <- tidy_data[order(tidy_data$subjectid, tidy_data$activityid),]
+
+tidy_data <- tidy_data[,-c(3)]
 
 write.table(activitynames_set, "full_data.txt", row.name=FALSE)
 write.table(tidy_data,"tidy_data.txt",row.name=FALSE)
