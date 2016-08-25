@@ -22,8 +22,14 @@ This code book summarizes the resulting data fields in full_data and tidy_data.t
 
 Identifiers:
 
-	activityid - The ID for the activity performed when the measurements were taken
-	subjectid - The ID of the test subject 
+	subjectid: The ID of the test subject 
+	activitytype: Activies performed while measurements were taken
+		1. WALKING 
+		2. WALKING_UPSTAIRS 
+		3. WALKING_DOWNSTAIRS 
+		4. SITTING 
+		5. STANDING 
+		6. LAYING
 
 Measurements:
 
@@ -106,14 +112,3 @@ fBodyBodyGyroMagMeanFreq
 fBodyBodyGyroJerkMagMean 
 fBodyBodyGyroJerkMagStd 
 fBodyBodyGyroJerkMagMeanFreq
-
-
-Activity Labels: 
-
-Activies performed while measurements were taken
-1. WALKING 
-2. WALKING_UPSTAIRS 
-3. WALKING_DOWNSTAIRS 
-4. SITTING 
-5. STANDING 
-6. LAYING
